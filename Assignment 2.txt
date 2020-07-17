@@ -2,4 +2,4 @@
 2)Ratings
 3)Row= Tuple,Oppurtunity
   Column=Attribute,Method
-4)In mysql there is no first function.
+4)In mysql there is limit but it will not specify it is first row or last row.
