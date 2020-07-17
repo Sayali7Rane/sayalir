@@ -1,0 +1,5 @@
+1)CNUM
+2)Ratings
+3)Row= Tuple,Oppurtunity
+  Column=Attribute,Method
+4)In mysql there is no first function.
