@@ -1,0 +1,12 @@
+1)
+select ONUM,AMT,ODATE from ORDERS;
+2)
+select * from CUSTOMERS where SNUM=1001;
+3)
+select CITY,SNAME,SNUM,COMM from SALESPEOPLE;
+4)
+select CNAME,RATING  from CUSTOMERS where CITY='San Jose';
+5)
+select distinct SNUM, ONUM 
+from SALESPEOPLE
+order by SNUM;
