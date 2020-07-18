@@ -1,0 +1,13 @@
+1)
+select * from ORDERS
+where ODATE='1990-10-03' OR ODATE='1990-10-04';
+2)
+select * from customer
+where snum in(select snum from salespeople where sname in("peel","motika"));
+3)
+select * from customers
+where cname LIKE 'a%' OR cname LIKE 'b%' OR cname LIKE 'c%' OR cname LIKE 'd%' OR cname LIKE 'e%' OR cname LIKE 'f%' OR cname LIKE 'g%';
+4)
+select * from customers where cname LIKE 'c%';
+5)
+select * from ORDERS where Amt is not  NULL AND Amt <> 0;
