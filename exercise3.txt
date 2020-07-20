@@ -1,0 +1,19 @@
+1)
+select concat(upper(substr(Sname,1,1)),lower(substr(Sname,2))) as Name from SUPPLIER;
+2)
+select upper(Sname) from supplier;
+3)
+select lower(Sname) from supplier;
+5)
+select replace(Sname,'la','ro') from supplier;
+6)
+select replace(replace(sname,'l','r'),'a','o')from supplier;
+7)
+select Sname, length(Sname) from supplier;
+8)
+SELECT * FROM Supplier WHERE SOUNDEX(sname)= SOUNDEX('BLOKE');
+9)
+select sname,status from supplier;
+10)
+select dayname(now()) from dual;
+select thursday(now()) from dual;
