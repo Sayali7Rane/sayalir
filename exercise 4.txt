@@ -1,0 +1,22 @@
+1)
+select min(Status) from supplier;
+2)
+select max(weight) from parts;
+3)
+select avg(weight) from parts;
+4)
+select sum(Qty) from parts where 'P#'='P1';
+5)
+select sum(Qty),'P#' from parts group by 'P#';
+6)
+select avg(Qty) from parts group by 'P#';
+7)
+select max(Qty) from parts where Qty>800 group by'P#';
+8)
+select status,count(sname) from supplier group by status;
+9)
+select city,count(*) from projects group by city;
+10)
+count(*) counts no of rows including duplicates and count(status) calculate the status count from supplier table. and does not include dupliicates.
+11)
+select status,count(sname) from supplier group by status;
