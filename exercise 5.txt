@@ -1,0 +1,44 @@
+1)
+select Sname, Qty from supplier, supplier_Parts_Project
+where supplier_Parts_Project.`S#` = supplier.`S#` ;
+2)
+select Pname, QTY from Parts, supplier_Parts_Project
+where supplier_Parts_Project.`P#` = Parts.`P#`;
+3)
+select Jname, QTY from supplier_Parts_Project, projects
+where supplier_Parts_Project.`J#` = Projects.`J#`;
+4)
+select sname, pname, jname, QTY 
+from supplier, Parts, Projects, supplier_Parts_Project
+where supplier_Parts_Project.`J#` = Projects.`J#`
+and supplier_Parts_Project.`P#` = Parts.`P#`
+and supplier_Parts_Project.`S#` = supplier.`S#`;
+5)
+select Sname, PName from supplier, Projects
+where supplier.City = Parts. CIty;
+6)
+select Pname, Qty from Parts, supplier_Parts_Projects
+where supplier_Parts_Project.`P#` = Parts.`P#`
+and color = 'RED';
+7)
+select sname,QTY from  supplier_Parts_Project, supplier
+where supplier_Parts_Project.`S#` = Supplier.`S#`
+and status = 20;
+8)
+select pName, Qty from supplier_Parts_Project, parts
+where supplier_Parts_Project.`P#` = Parts.`P#`
+and weight > 14;
+9)
+select projects.Jname , projects.city
+from projects,SUPPLIER_PARTS_PROJECT
+where projects.`J#` = SUPPLIER_PARTS_PROJECT.`J#` and 
+supplier_parts_project.Qty > 500;
+10)
+select  parts.Pname , SUPPLIER_PARTS_PROJECT.Qty
+from PARTS,SUPPLIER_PARTS_PROJECT
+where parts.`P#` = SUPPLIER_PARTS_PROJECT.`P#`and 
+PARTS.weight < 15;
+11)
+select  b.ename as employee ,a.ename as manager
+from emp a , emp b 
+where b.mgr = a.empno ;
