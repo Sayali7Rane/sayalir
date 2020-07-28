@@ -6,5 +6,5 @@ ADD CONSTRAINT PK_Onum PRIMARY KEY (Onum);
 3)
 CREATE INDEX I_DATE ON orders(odate);
 4)
-ALTER TABLE customers MODIFY rating
+ALTER TABLE customers MODIFY rating PRIMARY KEY;
 
