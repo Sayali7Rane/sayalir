@@ -7,4 +7,8 @@ ADD CONSTRAINT PK_Onum PRIMARY KEY (Onum);
 CREATE INDEX I_DATE ON orders(odate);
 4)
 ALTER TABLE customers MODIFY rating PRIMARY KEY;
+OR
+create unique index i_rating_cnum_snum on customers(rating,cnum,snum);
+show indexes from customers;
+show indexes from orders;
 
