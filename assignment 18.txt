@@ -1,0 +1,14 @@
+1)
+create table cityorders
+select onum,amt,snum,city
+from orders natural join
+customers;
+alter table cityorders add constraint onum_fk
+foreign key(onum) references orders(onum);
+2)
+ALTER TABLE cityorders ADD
+FOREIGN key(cnum) REFERENCES customer(cnum);
+ALTER TABLE copy_orders ADD
+FOREIGN key(prev) REFERENCES copy_orders(onum);
+
+
