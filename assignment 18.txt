@@ -11,4 +11,20 @@ FOREIGN key(cnum) REFERENCES customer(cnum);
 ALTER TABLE copy_orders ADD
 FOREIGN key(prev) REFERENCES copy_orders(onum);
 
+              OR
+CREATE TABLE IF NOT EXISTS orderC2(
+Onum INT(4),
+Amt FLOAT(7,2),
+Odate DATE,
+Cnum INT(4),
+Snum INT(4),
+prev int(4),
+constraint in_fx foreign key(prev) references Cityorders(Onum),
+constraint cfx foreign key(cnum) references customers(cnum),
+
+constraint sfx foreign key(snum) references salespeople(snum)
+
+);
+
+
 
