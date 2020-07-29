@@ -1,0 +1,15 @@
+1)1 & 4
+2)
+create view commission as
+select snum,
+comm
+from salespeople
+where comm between .10 AND .20;
+3)
+Suppose if you have a view named view1 on table t
+And if you apply another view on this view named view2
+And now if you make update on view 2 then it will be made on the table t;
+
+But remember if you have used distinct keyword in base view then the identifier in view2
+will be virtual view and they will not allow to update.
+
